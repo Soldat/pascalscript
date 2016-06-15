@@ -13062,8 +13062,8 @@ begin
     end;
     with AddParam do
     begin
-      OrgName:='x';
-      Mode:=pmInOut;
+      OrgName:='y';
+      Mode:=pmIn;
     end;
   end;
   with AddFunction('procedure Inc;').Decl do begin
@@ -13074,8 +13074,8 @@ begin
     end;
     with AddParam do
     begin
-      OrgName:='x';
-      Mode:=pmInOut;
+      OrgName:='y';
+      Mode:=pmIn;
     end;
   end;
   with AddFunction('procedure Include;').Decl do begin
