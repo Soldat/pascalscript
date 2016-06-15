@@ -9263,7 +9263,7 @@ begin
     btU32        : Stack.SetInt(-1,Tbtu32(arr.dta^)-Stack.GetInt(-2));    //Cardinal/LongWord
     btS32        : Stack.SetInt(-1,Tbts32(arr.dta^)-Stack.GetInt(-2));    //Integer/LongInt
 {$IFNDEF PS_NOINT64}
-    btS64        : Stack.SetInt64(-1,Tbts64(arr.dta^)-Stack.GetInt(-2));
+    btS64        : Stack.SetInt64(-1,Tbts64(arr.dta^)-Stack.GetInt64(-2));
 {$ENDIF}
     else Result:=false;
   end;
@@ -9283,7 +9283,7 @@ begin
     btU32        : Stack.SetInt(-1,Tbtu32(arr.dta^)+Stack.GetInt(-2));    //Cardinal/LongWord
     btS32        : Stack.SetInt(-1,Tbts32(arr.dta^)+Stack.GetInt(-2));    //Integer/LongInt
 {$IFNDEF PS_NOINT64}
-    btS64        : Stack.SetInt64(-1,Tbts64(arr.dta^)+Stack.GetInt(-2));
+    btS64        : Stack.SetInt64(-1,Tbts64(arr.dta^)+Stack.GetInt64(-2));
 {$ENDIF}
     else Result:=false;
   end;
